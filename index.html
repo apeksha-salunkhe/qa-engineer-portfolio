@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apeksha Salunkhe — QA Engineer portfolio showcasing manual testing, automation testing and API testing projects.">
+<title>Apeksha Salunkhe | QA Engineer Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#080d18;--panel:#101a2b;--panel2:#142139;--line:#263650;--text:#edf3ff;--muted:#a6b4ca;--blue:#78a7ff;--cyan:#67e4dc;--navy:#070c16}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,13,24,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.05em;font-size:1.2rem}.brand span{color:var(--cyan)}
+.navlinks{display:flex;gap:25px;font-size:.9rem;color:#bdc9dc}.navlinks a:hover{color:var(--cyan)}
+.menu{display:none;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);font-size:1.3rem;padding:5px 10px}
+.hero{position:relative;background:radial-gradient(ellipse at 82% 15%,#1a3b68 0,transparent 38%),radial-gradient(ellipse at 8% 90%,#123b49 0,transparent 32%),linear-gradient(135deg,#0b1425,#101d33 58%,#0b1425);padding:104px 0 92px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.45fr .8fr;gap:60px;align-items:center}
+.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:850}
+h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:1.02;letter-spacing:-.06em;margin:16px 0 20px}
+.hero p{color:#c1cee1;max-width:660px;font-size:1.08rem}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;font-weight:800;font-size:.92rem;transition:.2s;border:1px solid transparent}
+.btn.primary{background:linear-gradient(120deg,#8ab4ff,#68e2dc);color:#081321;box-shadow:0 8px 28px #4e9fff25}.btn.secondary{border-color:#536985;color:#e8f1ff;background:#ffffff08}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.profile-card{border:1px solid #38516d;background:linear-gradient(145deg,#14243bdf,#0d1929e8);padding:29px;border-radius:22px;box-shadow:0 25px 70px #0008}
+.orbit{width:126px;height:126px;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;background:linear-gradient(140deg,#9bbdff,#67e4dc);color:#081321;font-size:2.6rem;font-weight:950;box-shadow:0 0 40px #68dce033}
+.profile-card h3{text-align:center;margin:0;font-size:1.2rem}.profile-card p{text-align:center;font-size:.88rem;margin:5px 0;color:#b8c8dc}
+.profile-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px}.profile-tags span{font-size:.75rem;border:1px solid #49627e;border-radius:20px;padding:5px 9px;color:#dceaff;background:#ffffff06}
+section{padding:82px 0}.section-head{max-width:680px;margin-bottom:36px}.kicker{color:var(--cyan);font-weight:850;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:clamp(2rem,4vw,2.8rem);letter-spacing:-.05em;line-height:1.15;margin:9px 0 13px}.section-head p,.muted{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}.about-copy{font-size:1.04rem;color:#c2cee0}
+.info-box{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}.info-row{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}.info-row:last-child{border:0}.info-row span:first-child{color:var(--muted)}
+.skills,.workflow{background:#0c1422;border-top:1px solid #17263a;border-bottom:1px solid #17263a}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.skill-card{border:1px solid var(--line);border-radius:16px;padding:23px;background:linear-gradient(145deg,#111e31,#0e1828);transition:.2s}.skill-card:hover,.project:hover{border-color:#4d779d;transform:translateY(-3px)}
+.skill-icon{width:42px;height:42px;border-radius:12px;background:#1b3550;color:var(--cyan);display:grid;place-items:center;font-weight:950;margin-bottom:15px}
+.skill-card h3{margin:0 0 9px;font-size:1.02rem}.skill-card p{margin:0;color:var(--muted);font-size:.9rem}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{background:linear-gradient(145deg,#111d30,#0e1828);border:1px solid var(--line);border-radius:19px;padding:27px;display:flex;flex-direction:column;min-height:340px;box-shadow:0 12px 30px #0002;transition:.2s}
+.project-top{display:flex;justify-content:space-between;align-items:center}.project-num{font-weight:950;color:#5f83a8;font-size:1.8rem}.project-label{font-size:.7rem;color:var(--cyan);background:#12343a;padding:5px 10px;border-radius:30px;font-weight:850;letter-spacing:.07em}
+.project h3{font-size:1.35rem;margin:15px 0 8px}.project p{color:var(--muted);margin:0 0 15px}.project ul{padding-left:19px;color:#c0cde0;font-size:.92rem;margin:0 0 18px}.project li{margin:7px 0}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.pills span{font-size:.75rem;background:#1a2a40;padding:5px 9px;border-radius:7px;color:#c8d8ed;border:1px solid #2b405b}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:21px;border:1px solid var(--line);border-radius:15px;background:#101b2b}.step b{display:block;color:var(--cyan);font-size:.76rem;letter-spacing:.1em;margin-bottom:8px}.step h3{font-size:1rem;margin:0 0 6px}.step p{font-size:.87rem;color:var(--muted);margin:0}
+.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:23px}.edu h3{margin:0 0 5px}.edu p{margin:0;color:var(--muted);font-size:.92rem}
+.contact{background:radial-gradient(ellipse at 80% 10%,#163657 0,transparent 45%),#0b1422;border-top:1px solid var(--line);color:var(--text)}.contact .section-head p{color:#bac9dc}.contact-box{display:flex;align-items:center;justify-content:space-between;gap:25px;border:1px solid #314965;background:#101f33;padding:28px;border-radius:18px}.contact-box p{color:#bac9dc;margin:4px 0}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{background:linear-gradient(120deg,#8ab4ff,#68e2dc);color:#081321;border-radius:9px;padding:10px 14px;font-weight:850;font-size:.88rem}
+footer{padding:23px 0;text-align:center;color:#8fa1ba;background:#070c16;border-top:1px solid #17263a;font-size:.82rem}
+@media(max-width:820px){.hero-grid,.about-grid{grid-template-columns:1fr}.profile-card{max-width:370px}.skill-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.contact-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#0b1422;padding:18px 22px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:70px 0}.skill-grid,.project-grid,.education-grid,.steps{grid-template-columns:1fr}section{padding:60px 0}.wrap{width:min(100% - 30px,1120px)}.info-row{align-items:flex-start}.info-row strong{text-align:right}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#home">AS<span>.</span></a><button class="menu" aria-label="Toggle menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="eyebrow">QA Engineer · Pune, India</div><h1>Apeksha<br>Salunkhe<span style="color:#8fa8ff">.</span></h1><p>QA Engineer focused on manual testing, test automation and API testing. Skilled in test case design, defect tracking and automation using Java-based tools, with an interest in Playwright and continuous learning.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn secondary" href="mailto:salunkheapeksha1918@gmail.com">Contact me</a><a class="btn secondary" href="Apeksha_Salunkhe_CV.pdf" download>Download CV ↓</a></div></div><aside class="profile-card"><div class="orbit">AS</div><h3>Quality-minded. Detail-driven.</h3><p>QA Engineer | Software Testing</p><div class="profile-tags"><span>Manual Testing</span><span>Java</span><span>Selenium</span><span>Postman</span><span>SQL</span></div></aside></div></section>
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">A little about me</div><h2>Quality is built into every detail.</h2></div><div class="about-grid"><div class="about-copy"><p>I’m a QA Engineer with an interest in manual testing, test automation and API testing. My experience includes designing test cases, tracking defects, validating REST APIs and building automation scripts using Java-based tools.</p><p>I value clear communication, structured testing and continuous learning. I’m also exploring AI tools that can help testers work more effectively.</p></div><div class="info-box"><div class="info-row"><span>Current focus</span><strong>QA & Test Automation</strong></div><div class="info-row"><span>Location</span><strong>Pune, India</strong></div><div class="info-row"><span>Languages</span><strong>Java, SQL</strong></div><div class="info-row"><span>Ways of working</span><strong>Agile · Scrum</strong></div></div></div></div></section>
+<section class="skills" id="skills"><div class="wrap"><div class="section-head"><div class="kicker">Technical toolkit</div><h2>Skills I bring to testing.</h2><p>A practical mix of test design, automation, API validation and supporting tools.</p></div><div class="skill-grid">
+<div class="skill-card"><div class="skill-icon">✓</div><h3>Manual & Functional Testing</h3><p>Functional, regression, smoke, sanity, UAT, exploratory and web testing.</p></div>
+<div class="skill-card"><div class="skill-icon">⌘</div><h3>Automation Testing</h3><p>Selenium WebDriver, TestNG, JUnit, Page Object Model (POM) and Java. Playwright is also noted in my professional summary.</p></div>
+<div class="skill-card"><div class="skill-icon">⇄</div><h3>API Testing</h3><p>Postman, REST APIs, status-code and header checks, JSON validation and data-driven scenarios.</p></div>
+<div class="skill-card"><div class="skill-icon">▤</div><h3>Database & Querying</h3><p>SQL joins, subqueries, GROUP BY and HAVING.</p></div>
+<div class="skill-card"><div class="skill-icon">⚙</div><h3>Tools & Build</h3><p>Jira, GitHub, Eclipse IDE and Maven.</p></div>
+<div class="skill-card"><div class="skill-icon">◎</div><h3>QA Foundations</h3><p>SDLC, STLC, bug life cycle, test design techniques, Agile and Scrum.</p></div>
+</div></div></section>
+<section id="projects"><div class="wrap"><div class="section-head"><div class="kicker">Selected projects</div><h2>Putting testing into practice.</h2><p>Project work described in my CV, with the tools and testing activities used.</p></div><div class="project-grid">
+<article class="project"><div class="project-top"><span class="project-num">01</span><span class="project-label">WEB AUTOMATION</span></div><h3>E-Commerce Web Automation Project</h3><p>Automated end-to-end test scenarios for an e-commerce web application using Java.</p><ul><li>Created automated test scripts and applied the Page Object Model to improve maintainability and reusability.</li><li>Executed tests across Chrome and Firefox.</li><li>Generated test reports and integrated Maven for build management and test execution.</li></ul><div class="pills"><span>Java</span><span>Selenium WebDriver</span><span>POM</span><span>Maven</span><span>Chrome</span><span>Firefox</span></div></article>
+<article class="project"><div class="project-top"><span class="project-num">02</span><span class="project-label">API TESTING</span></div><h3>API Automation Testing Project</h3><p>Created and executed REST API test cases using Postman collections.</p><ul><li>Validated response status codes, headers and JSON response bodies.</li><li>Automated API test execution and generated HTML reports.</li><li>Performed data-driven testing with different request payloads and scenarios.</li></ul><div class="pills"><span>Postman</span><span>REST APIs</span><span>JSON</span><span>Data-driven Testing</span><span>HTML Reports</span></div></article>
+</div></div></section>
+<section class="workflow" id="approach"><div class="wrap"><div class="section-head"><div class="kicker">My testing approach</div><h2>From understanding to confidence.</h2><p>A clear, repeatable approach helps uncover issues and communicate quality.</p></div><div class="steps">
+<div class="step"><b>01 / UNDERSTAND</b><h3>Review requirements</h3><p>Understand expected behaviour, scope and acceptance criteria.</p></div>
+<div class="step"><b>02 / DESIGN</b><h3>Plan test coverage</h3><p>Prepare test scenarios and cases, including alternate paths and edge cases.</p></div>
+<div class="step"><b>03 / EXECUTE</b><h3>Test & investigate</h3><p>Run manual, automated or API checks and record defects clearly.</p></div>
+<div class="step"><b>04 / REPORT</b><h3>Share results</h3><p>Review outcomes, report findings and support regression testing.</p></div>
+</div></div></section>
+<section id="education"><div class="wrap"><div class="section-head"><div class="kicker">Education & certification</div><h2>Learning never stops.</h2></div><div class="education-grid"><div class="edu"><h3>Bachelor of Science (BSc), Chemistry</h3><p>Shivaji University, Kolhapur · 2018–2020</p></div><div class="edu"><h3>Advanced Excel Certification</h3><p>Certification listed in my CV</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="kicker" style="color:#9fb3ff">Let’s connect</div><h2>Looking for a QA Engineer?</h2><p>I’m interested in opportunities where I can contribute to software quality, keep learning and grow as a tester. Feel free to reach out.</p></div><div class="contact-box"><div><strong style="font-size:1.1rem">Apeksha Salunkhe</strong><p>Pune, India</p><p>9922480576 · salunkheapeksha1918@gmail.com</p></div><div class="contact-links"><a href="mailto:salunkheapeksha1918@gmail.com">Email me ↗</a><a href="tel:+919922480576">Call me ↗</a><a href="Apeksha_Salunkhe_CV.pdf" download>Download CV ↗</a></div></div></div></section>
+</main>
+<footer>© <span id="year"></span> Apeksha Salunkhe · QA Engineer Portfolio</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));</script>
+</body></html>
